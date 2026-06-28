@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="#1A1A1A">
+        
+        <ImageButton android:id="@+id/incognitoClose"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="?attr/selectableItemBackground"/>
+        
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🕶️ Incognito"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="#2A2A2A">
+        
+        <EditText android:id="@+id/incognitoUrlBar"
+            android:layout_width="0dp" android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="Search incognito..."
+            android:inputType="textUri"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:background="#3A3A3A"/>
+        
+        <ImageButton android:id="@+id/incognitoGoButton"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:background="?attr/selectableItemBackground"/>
+    </LinearLayout>
+    
+    <WebView android:id="@+id/incognitoWebView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
